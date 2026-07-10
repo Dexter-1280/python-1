@@ -3,3 +3,5 @@
 x1w = int(input("Enter your number:"))
 for i in range(x1w+1):
     print(i)
+"Genral problem"
+print("hello world")
