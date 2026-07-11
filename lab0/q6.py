@@ -18,3 +18,11 @@ else:
 "Reverse the string" 
 text = input()
 print(text[::-1])      
+
+"maths fuction"
+
+def square(n):
+    return n * n
+
+num = int(input())
+print(square(num))
