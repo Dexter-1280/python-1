@@ -16,3 +16,15 @@ for ch in text.lower():
         count += 1
 
 print(count)
+
+
+
+marks = [78, 92, 65, 88, 95]
+
+print(len(marks))
+print(max(marks))
+print(min(marks))
+print(sum(marks))
+
+marks.sort()
+print(marks)
