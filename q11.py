@@ -31,3 +31,14 @@ for i in items:
         count += 1
 
 print(f"The item {target} is repeated {count} times.")
+punctuations = '''!"'()-[]{};:'",<>./?@#$%^&*_~'''
+
+text = input("Enter a string: ")
+
+result = ""
+
+for ch in text:
+    if ch not in punctuations:
+        result += ch
+
+print(result)
