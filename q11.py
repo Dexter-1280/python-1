@@ -17,3 +17,17 @@ else:
    print("This is in returned order")
 
 print("First four of processed",orders[:4])
+vowels = ['s','h','r','i','r','a','m','d','e','o','b','a','b','a','c','o','l','l','e','g','e']
+count=0
+for i in vowels:
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+        count=count+1
+print("Total count",count)
+items=[23,23,45,57,234,54,34,443,54,]
+count=0
+target=23
+for i in items:
+     if i == target:
+        count += 1
+
+print(f"The item {target} is repeated {count} times.")
