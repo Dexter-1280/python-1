@@ -60,3 +60,15 @@ common = set(s1) & set(s2)
 print("Common letters are:")
 for ch in common:
     print(ch, end=" ")
+
+
+
+L = [1, 2, 3, 4, 5]
+
+k = int(input("Enter number of rotations: "))
+
+k = k % len(L)
+
+L = L[k:] + L[:k]
+
+print("Rotated List:", L)
