@@ -23,3 +23,29 @@ for p in price:
     if p > avg:
         count += 1
 print("g) Expensive products =", count)
+
+students = (
+    (1, "Amit", "Nagpur", 85, 90, 88),
+    (2, "Riya", "Pune", 92, 95, 91),
+    (3, "Rahul", "Mumbai", 70, 75, 80),
+    (4, "Sneha", "Delhi", 89, 91, 87),
+    (5, "Karan", "Nashik", 78, 82, 80),
+    (6, "Priya", "Bhopal", 95, 94, 96),
+    (7, "Neha", "Indore", 88, 85, 90),
+    (8, "Arjun", "Hyderabad", 81, 79, 84),
+    (9, "Rohan", "Jaipur", 73, 77, 75),
+    (10, "Anjali", "Chennai", 90, 89, 92)
+)
+
+students = sorted(students, key=lambda x: x[0])
+
+total = []
+for s in students:
+    marks = s[3] + s[4] + s[5]
+    total.append((marks, s))
+
+total.sort(reverse=True)
+
+print("Top 3 Students")
+for i in range(3):
+    print(total[i][1])
